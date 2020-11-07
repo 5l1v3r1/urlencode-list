@@ -31,3 +31,26 @@ This script will just URL encode or decode a list but as mentioned above you can
 You may not need to URL encode a list every time you want to do an attack like this but having the ability to quickly convert a list so that it is URL encoded or decoded is really useful.
 
 In the near future I will demonstrate how this is achieved using tools such as wfuzz and bypassing the use of fully automated tools such as sqlmap.
+
+**Usage**
+
+Encode a list - print to screen
+```
+python urlencode-list.py -f sql-cheatsheet.txt
+```
+
+Encode a list - output to file
+```
+python urlencode-list.py -f sql-cheatsheet.txt -o outputfile.txt
+```
+
+Decode a list - print to screen
+```
+python urlencode-list.py -f sql-cheatsheet.txt -d
+```
+
+Decode a list - output to file
+```
+python urlencode-list.py -f sql-cheatsheet.txt -o outputfile.txt -d
+```
+
