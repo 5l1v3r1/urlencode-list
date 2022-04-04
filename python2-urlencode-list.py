@@ -1,7 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 import sys
 import os.path
-import urllib.parse
+import urllib
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -27,11 +27,11 @@ if args.decode is False:
 
         f = open(path, 'w+')
         for name in names:
-            f.write(urllib.parse.quote(name) + '\n')
+            f.write(urllib.quote(name) + '\n')
         f.close()
     else:
         for name in names:
-            print(urllib.parse.quote(name))
+            print(urllib.quote(name))
 else:
     #Here we will decode if the user has supplied the decode argument
     if args.output is not None:
@@ -40,8 +40,8 @@ else:
 
         f = open(path, 'w+')
         for name in names:
-            f.write(urllib.parse.unquote(name) + '\n')
+            f.write(urllib.unquote(name) + '\n')
         f.close()
     else:
         for name in names:
-            print(urllib.parse.unquote(name))
+            print(urllib.unquote(name))

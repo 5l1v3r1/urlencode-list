@@ -4,6 +4,11 @@
 
 All the binaries/scripts/code of urlencode-list should be used for authorized penetration testing and/or educational purposes only. Any misuse of this software will not be the responsibility of the author or of any other collaborator. Use it on your own networks and/or with the network owner's permission.
 * * *
+
+**Update**
+
+Just a small update that now includes a new version for Python 3. I have kept the old version as part of the project for now.
+
 **What is this script?**
 
 This was a quick Python script I put together to URL encode / decode lists.
